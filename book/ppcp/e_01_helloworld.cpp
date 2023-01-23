@@ -11,8 +11,10 @@
 #include <thread>
 #include <vector>
 
-TEST_CASE("hello world")
+TEST_CASE("e_01_helloworld")
 {
+    spdlog::info("--- --- --- e_01_helloworld --- --- ---");
+
     const size_t             num_threads = 4;
     std::vector<std::thread> threads;
 

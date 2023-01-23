@@ -1,12 +1,18 @@
 /*********************************************************************
- * \file   stdafx.h
- * \brief  Standard Application Framework Extensions
- * 
+ * \file   main.cpp
+ * \brief  test runner
+ *
  * \author starshore
  * \date   January 2023
  *********************************************************************/
 
-#pragma once
-
-#include <spdlog/spdlog.h>
+#define DOCTEST_CONFIG_IMPLEMENT
 #include <doctest/doctest.h>
+
+int main(int argc, char *argv[])
+{
+    doctest::Context context;
+
+    context.applyCommandLine(argc, argv);
+    return context.run();
+}
