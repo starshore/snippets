@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.13)
+# Parallel Programming: Concepts And Practice
 
 set(BOOK_PPCP_SOURCES
     "main.cpp"
